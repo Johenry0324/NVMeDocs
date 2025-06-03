@@ -1,0 +1,89 @@
+4 NVM Express Requirements 
+
+4.1 Overview 
+4.2 NVMe Reset Supported 
+4.3 NVMe Controller Configuration and Behavior 
+4.4 NVMe Admin Command Set 
+4.4.1 Namespace Management/Attachment Commands 
+4.4.2 Namespace Utilization (NUSE) 
+4.4.3 UUID for DSSD Specific Information 
+4.5 NVMe I/O Command Set 
+4.6 Optional NVMe Feature Support 
+4.7 Command Timeout 
+4.8 Log Page Requirements 
+4.8.1 Standard Log Page Requirements 
+4.8.2 TCG Activity Events for Persistent Event Log 
+4.8.3 TCG Activity Event Format 
+4.8.4 DSSD Log Page Requirements 
+4.8.5 SMART / Health Information Requirements 
+4.8.6 SMART / Health Information Extended (Log Identifier C0h) 
+4.8.7 Error Recovery (Log Identifier C1h)
+4.8.8 Latency Monitor Log and Feature Set Requirements 
+4.8.9 Latency Monitor (Log Identifier C3h) 
+4.8.10 Device Capabilities (Log Identifier C4h) Requirements 
+4.8.11 DSSD Power State Requirements 
+4.8.12 Unsupported Requirements (Log Identifier C5h) 
+4.8.13 Hardware Component (Log Identifier C6h) 
+4.8.14 TCG Configuration (Log Identifier C7h) 
+4.8.15 Telemetry String Log (Log Identifier C9h) 
+4.9 Host and Controller Initiated Telemetry Logs 
+4.9.1 Theory of Operation 
+4.9.2 Data Partitioning Overview 
+4.9.3 Statistic Area 
+4.9.4 Event FIFO 
+4.9.5 Existing NVMe Logs 
+4.9.6 Debug Structure Overview Summary 
+4.9.7 Telemetry Data Requirements 
+4.9.8 Telemetry Reason Identifier Format 
+4.9.9 Debug Profiles 
+4.9.10 Statistic Descriptor 
+4.9.11 Statistic Identifiers 
+4.9.12 Statistic Descriptor Location
+4.9.13 Statistic Requirements 
+4.9.14 Event FIFO Requirements 
+4.9.15 Event FIFO Location 
+4.9.16 Telemetry Data Area 
+4.10 Device Self-test Requirements 
+4.11 Firmware Update Requirements 
+4.12 Factory Default Requirements 
+4.13 De-Allocation Requirements 
+4.14 Sector Size and Namespace Support 
+4.15 Set/Get Features Requirements 
+4.15.1 General Feature Requirements 
+4.15.2 DSSD Set Feature Requirements 
+4.15.3 Error Injection (Feature Identifier C0h) Set Feature 
+4.15.4 Error Injection (Feature Identifier C0h) Get Feature 
+4.15.5 EOL/PLP Failure Mode (Feature Identifier C2h) Set Feature 
+4.15.6 EOL/PLP Failure Mode (Feature Identifier C2h) Get Feature
+4.15.7 Clear PCIe Correctable Error Counters (Feature Identifier C3h) Set Feature 
+4.15.8 Clear PCIe Correctable Error Counters (Feature Identifier C3h) Get Feature 
+4.15.9 Enable IEEE1667 Silo (Feature Identifier C4h) Set Feature 
+
+5 PCIe Requirements 
+
+5.1 Boot Requirements 
+5.2 PCIe Error Logging  
+5.3 Low Power Modes  
+5.4 PCIe Eye Capture  
+
+6 Optional Device Features 
+
+6.1 Flexible Data Placement Requirements 
+6.1.1 Generic Flexible Data Placement Requirements
+6.1.2 FDP Single Reclaim Group Configuration 
+6.1.3 FDP Die Placement Configuration 
+6.2 DIX Requirements  
+
+7 Reliability 
+
+7.1 Uncorrectable Bit Error Rate  
+7.2 Power On/Off Requirements  
+7.2.1 Time to Ready and Shutdown Requirements  
+7.2.2 Incomplete/Unsuccessful Shutdown 
+7.3 End to End Internal Data Protection  
+7.4 Behavior on Firmware Crash, Panic or Assert  
+7.5 Annual Failure Rate (AFR)  
+7.6 Background Data Refresh  
+7.7 Wear-leveling  
+7.8 Power Loss Protection  
+7.9 Device Limits  
