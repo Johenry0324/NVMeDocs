@@ -1,5 +1,4 @@
-4 NVM Express Requirements 
-
+*4 NVMe 9,126
 4.1 Overview 
 4.2 NVMe Reset Supported 
 4.3 NVMe Controller Configuration and Behavior 
@@ -10,19 +9,19 @@
 4.5 NVMe I/O Command Set 
 4.6 Optional NVMe Feature Support 
 4.7 Command Timeout 
-4.8 Log Page Requirements 
-4.8.1 Standard Log Page Requirements 
+4.8 Log Page  
+4.8.1 Standard Log Page  
 4.8.2 TCG Activity Events for Persistent Event Log 
 4.8.3 TCG Activity Event Format 
-4.8.4 DSSD Log Page Requirements 
-4.8.5 SMART / Health Information Requirements 
+4.8.4 DSSD Log Page  
+4.8.5 SMART / Health Information  
 4.8.6 SMART / Health Information Extended (Log Identifier C0h) 
 4.8.7 Error Recovery (Log Identifier C1h)
-4.8.8 Latency Monitor Log and Feature Set Requirements 
+4.8.8 Latency Monitor Log and Feature Set  
 4.8.9 Latency Monitor (Log Identifier C3h) 
-4.8.10 Device Capabilities (Log Identifier C4h) Requirements 
-4.8.11 DSSD Power State Requirements 
-4.8.12 Unsupported Requirements (Log Identifier C5h) 
+4.8.10 Device Capabilities (Log Identifier C4h)  
+4.8.11 DSSD Power State  
+4.8.12 Unsupported  (Log Identifier C5h) 
 4.8.13 Hardware Component (Log Identifier C6h) 
 4.8.14 TCG Configuration (Log Identifier C7h) 
 4.8.15 Telemetry String Log (Log Identifier C9h) 
@@ -33,24 +32,24 @@
 4.9.4 Event FIFO 
 4.9.5 Existing NVMe Logs 
 4.9.6 Debug Structure Overview Summary 
-4.9.7 Telemetry Data Requirements 
+4.9.7 Telemetry Data  
 4.9.8 Telemetry Reason Identifier Format 
 4.9.9 Debug Profiles 
 4.9.10 Statistic Descriptor 
 4.9.11 Statistic Identifiers 
 4.9.12 Statistic Descriptor Location
-4.9.13 Statistic Requirements 
-4.9.14 Event FIFO Requirements 
+4.9.13 Statistic  
+4.9.14 Event FIFO  
 4.9.15 Event FIFO Location 
 4.9.16 Telemetry Data Area 
-4.10 Device Self-test Requirements 
-4.11 Firmware Update Requirements 
-4.12 Factory Default Requirements 
-4.13 De-Allocation Requirements 
+4.10 Device Self-test  
+4.11 Firmware Update  
+4.12 Factory Default  
+4.13 De-Allocation  
 4.14 Sector Size and Namespace Support 
-4.15 Set/Get Features Requirements 
-4.15.1 General Feature Requirements 
-4.15.2 DSSD Set Feature Requirements 
+4.15 Set/Get Features  
+4.15.1 General Feature  
+4.15.2 DSSD Set Feature  
 4.15.3 Error Injection (Feature Identifier C0h) Set Feature 
 4.15.4 Error Injection (Feature Identifier C0h) Get Feature 
 4.15.5 EOL/PLP Failure Mode (Feature Identifier C2h) Set Feature 
@@ -58,27 +57,32 @@
 4.15.7 Clear PCIe Correctable Error Counters (Feature Identifier C3h) Set Feature 
 4.15.8 Clear PCIe Correctable Error Counters (Feature Identifier C3h) Get Feature 
 4.15.9 Enable IEEE1667 Silo (Feature Identifier C4h) Set Feature 
-
-5 PCIe Requirements 
-
-5.1 Boot Requirements 
+4.15.10 Enable IEEE1667 Silo (Feature Identifier C4h) Get Feature  
+4.15.11 Latency Monitor (Feature Identifier C5h) Set Feature  
+4.15.12 Latency Monitor (Feature Identifier C5h) Get Feature  
+4.15.13 PLP Health Check Interval (Feature Identifier C6h) Set Feature  
+4.15.14 PLP Health Check Interval (Feature Identifier C6h) Get Feature  
+4.15.15 DSSD Power State (Feature Identifier C7h) Set Feature  
+4.15.16 DSSD Power State (Feature Identifier C7h) Get Feature  
+4.15.17 Set Telemetry Profile (Feature Identifier C8h) Set Feature  
+4.15.18 Set Telemetry Profile (Feature Identifier C8h) Get Feature  
+4.15.19 DSSD Asynchronous Event Configuration (Feature Identifier C9h) Set Feature  
+4.15.20 DSSD Asynchronous Event Configuration (Feature Identifier C9h) Get Feature 
+*5 PCIe 126,129
+5.1 Boot  
 5.2 PCIe Error Logging  
 5.3 Low Power Modes  
 5.4 PCIe Eye Capture  
-
-6 Optional Device Features 
-
-6.1 Flexible Data Placement Requirements 
-6.1.1 Generic Flexible Data Placement Requirements
+*6 Optional Device Features 129,130
+6.1 Flexible Data Placement  
+6.1.1 Generic Flexible Data Placement 
 6.1.2 FDP Single Reclaim Group Configuration 
 6.1.3 FDP Die Placement Configuration 
-6.2 DIX Requirements  
-
-7 Reliability 
-
+6.2 DIX   
+*7 Reliability 131,138
 7.1 Uncorrectable Bit Error Rate  
-7.2 Power On/Off Requirements  
-7.2.1 Time to Ready and Shutdown Requirements  
+7.2 Power On/Off   
+7.2.1 Time to Ready and Shutdown   
 7.2.2 Incomplete/Unsuccessful Shutdown 
 7.3 End to End Internal Data Protection  
 7.4 Behavior on Firmware Crash, Panic or Assert  
@@ -87,3 +91,87 @@
 7.7 Wear-leveling  
 7.8 Power Loss Protection  
 7.9 Device Limits  
+*8 Endurance 138,140
+8.1 Endurance Data  
+8.2 Retention Conditions  
+8.3 Shelf Life  
+8.4 End-of-Life (EOL)  
+*9 Thermal 140,143
+9.1 Data Center Altitude  
+9.2 Thermal Throttling  
+9.3 Temperature Reporting  
+9.4 Thermal Shutdown  
+*10 Form Factor 143,146
+10.1 Generic Form Factor   
+10.2 Power Consumption Measurement Methodology  
+10.3 Power Levels  
+10.4 M.2 Form Factor   
+10.5 E1.S Form Factor   
+10.6 E1.L Form Factor   
+10.7 E3 Form Factor   
+10.8 SFF-8639 (U.2/U.3) Form Factor   
+*11 Management Support 147,154
+11.1 NVMe Basic Management Command (Appendix A)   
+11.2 NVMe Basic Management Command (Appendix A) Data Format  
+11.3 NVMe-MI 
+*12 Security 154,161
+12.1 Basic Security   
+12.2 Secure Boot  
+12.3 DMTF Security Protocol and Data Model (SPDM)  
+12.4 Data Encryption and Eradication  
+12.5 TCG Implementation   
+12.5.1 TCG Version and Features  
+12.5.2 TCG Communication Layer  
+12.5.3 TCG Session Layer  
+12.5.4 TCG Transactions  
+12.5.5 TCG Authentication 
+12.5.6 TCG Crypto  
+12.5.7 TCG Locking Security Provider  
+12.5.8 TCG PSID Feature Set
+*13 Device Profiles 162,162
+*14 Labeling 163,163
+14.1 Label  
+15 Compliance 168,169
+15.1 ROHS Compliance  
+15.2 ESD Compliance 
+15.3 EMC Compliance  
+*16 Shock and Vibration 169,169
+*17 Sustainability   169,169
+*18 NVMe Linux CLI Plug-In 170,170
+18.1 NVMe CLI Management Utility
+18.2 NVMe CLI Plugin   
+18.2.1 NVMe CLI Plug-In Nomenclature/Functional   
+18.2.2 NVMe CLI Plug-In FW Activation History   
+*19 Revision History 171,171
+*20 META Specific Items 171,177
+20.1 Configuration Specifics 
+20.2 Performance   
+20.3 Performance Targets for FB-FIO Synth Flash - HE_Flash_Short_wTRIM_1H22 (for all capacities) 
+20.4 Performance Targets for FB-FIO Synth Flash – Cache_1H22 (for all capacities)  
+20.5 Performance Targets for FB-FIO Synth Flash – Search_1H22  
+20.6 Performance Targets for FB-FIO Synth Flash – WSF  
+20.7 Performance Targets for FB-FIO Synth Flash – WACache_1H22 (8TB capacity) 
+20.7.1 Performance Targets for Boot-Drive QOS workloads  
+20.8 Trim Rate Targets 
+20.9 IO.go Benchmark Targets
+20.10 Fileappend Benchmark Targets  
+20.11 Sequential Write Bandwidth  
+20.12 CacheBench Targets 
+20.13 Max Latency Targets  
+20.14 BootBench Target 
+*21 Microsoft Specific Items 177,177
+21.1 Configuration Specifics 
+*22 Latency Monitoring Feature Set Theory of Operation 177,185 
+22.1 Overview 
+22.2 Functional Operation 
+22.2.1 Latency Monitoring Feature Description
+22.2.2 Bucket Description Overview 
+22.2.3 Active Bucket Description  
+22.3 Persistence Across Power Cycles 
+22.4 Debug Logs 
+22.5 Latency Monitoring Feature - Challenging Event Handling
+22.5.1 Power Off/On When Latency Monitoring Feature is Enabled  
+22.5.2 Power Off/On When Latency Monitoring Feature is Disabled 
+22.5.3 Moving Information from Active to Static Buckets 
+22.5.4 Firmware Update
+22.6 Configuring Latency Monitoring
