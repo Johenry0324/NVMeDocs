@@ -7,14 +7,14 @@
 4.4.2 Namespace Utilization (NUSE) 
 4.4.3 UUID for DSSD Specific Information 
 4.5 NVMe I/O Command Set 
-4.6 Optional NVMe Feature Support 
+4.6 Optional NVMe Feature Support 1
 4.7 Command Timeout 
 4.8 Log Page  
 4.8.1 Standard Log Page  
 4.8.2 TCG Activity Events for Persistent Event Log 
 4.8.3 TCG Activity Event Format 
 4.8.4 DSSD Log Page  
-4.8.5 SMART / Health Information  
+4.8.5 SMART / Health Information  asasdas
 4.8.6 SMART / Health Information Extended (Log Identifier C0h) 
 4.8.7 Error Recovery (Log Identifier C1h)
 4.8.8 Latency Monitor Log and Feature Set  
